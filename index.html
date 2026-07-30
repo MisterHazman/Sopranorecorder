@@ -333,7 +333,17 @@
 <script>
 const NOTES = ["A","B","C","D","E","F","G","C′","D′"];
 const FREQS = [440.00,493.88,523.25,587.33,659.25,698.46,783.99,1046.50,1174.66]; // A4..D6
-const QUESTIONS = NOTES.map((note, i) => ({ note, img: `images/${i+1}.png`, freq: FREQS[i] }));
+const QUESTIONS = [
+  { note: "C",  img: "images/1.png", freq: 440.00 },
+  { note: "D",  img: "images/2.png", freq: 493.88 },
+  { note: "E",  img: "images/3.png", freq: 523.25 },
+  { note: "F",  img: "images/4.png", freq: 587.33 },
+  { note: "G",  img: "images/5.png", freq: 659.25 },
+  { note: "A",  img: "images/6.png", freq: 698.46 },
+  { note: "B",  img: "images/7.png", freq: 783.99 },
+  { note: "C′", img: "images/8.png", freq: 1046.50 },
+  { note: "D′", img: "images/9.png", freq: 1174.66 },
+];
 const ROUND_SECONDS = 120;
 const MAX_HIGHSCORES = 10;
 
