@@ -612,7 +612,7 @@ function updateTimerDisplay(){
 function renderQuestion(){
   const qi = nextQuestionIndex();
   const q = QUESTIONS[qi];
-
+const correctIdx = NOTES.indexOf(q.note);
   app.innerHTML = `
     <div class="card">
       <div class="round-head">
