@@ -634,8 +634,8 @@ function renderQuestion(){
     const btn = document.createElement('button');
     btn.className = 'opt';
     btn.textContent = label;
-    btn.addEventListener('click', ()=> handleAnswer(ci, qi, btn));
-    opts.appendChild(btn);
+    btn.addEventListener('click', ()=> handleAnswer(ci, correctIdx, btn));
+  opts.appendChild(btn);
   });
 }
 
